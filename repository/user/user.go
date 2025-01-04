@@ -2,9 +2,10 @@ package user
 
 import (
 	"context"
+	"errors"
 
-	"github.com/dezh-tech/go-echo-boilerplate/entity"
-	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/database"
+	"github.com/dezh-tech/geb/entity"
+	"github.com/dezh-tech/geb/infrastructure/database"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )
@@ -45,9 +46,10 @@ func (u User) GetByPubkey(pubkey string) (entity.User, error) {
 	var usr entity.User
 	err := collection.FindOne(ctx, bson.M{"pubkey": pubkey}).Decode(&usr)
 	if err != nil {
-		if err == mongo.ErrNoDocuments {
+		if errors.Is(err, mongo.ErrNoDocuments) {
 			return usr, nil
 		}
+
 		return usr, err
 	}
 

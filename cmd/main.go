@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/dezh-tech/go-echo-boilerplate"
-	"github.com/dezh-tech/go-echo-boilerplate/cmd/commands"
+	goginboilerplate "github.com/dezh-tech/geb"
+	"github.com/dezh-tech/geb/cmd/commands"
 )
 
 func main() {

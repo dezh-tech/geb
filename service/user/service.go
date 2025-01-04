@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/dezh-tech/go-echo-boilerplate/entity"
+	"github.com/dezh-tech/geb/entity"
 )
 
 type Repository interface {

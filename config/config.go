@@ -3,12 +3,12 @@ package config
 import (
 	"os"
 
-	"github.com/dezh-tech/go-echo-boilerplate/delivery/grpc"
-	"github.com/dezh-tech/go-echo-boilerplate/delivery/http"
-	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/database"
-	grpcclient "github.com/dezh-tech/go-echo-boilerplate/infrastructure/grpc_client"
-	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/redis"
-	"github.com/dezh-tech/go-echo-boilerplate/pkg/logger"
+	"github.com/dezh-tech/geb/delivery/grpc"
+	"github.com/dezh-tech/geb/delivery/http"
+	"github.com/dezh-tech/geb/infrastructure/database"
+	grpcclient "github.com/dezh-tech/geb/infrastructure/grpc_client"
+	"github.com/dezh-tech/geb/infrastructure/redis"
+	"github.com/dezh-tech/geb/pkg/logger"
 	"github.com/joho/godotenv"
 	"gopkg.in/yaml.v3"
 )
@@ -49,7 +49,7 @@ func Load(path string) (*Config, error) {
 	config.Database.URI = os.Getenv("MONGO_URI")
 	config.RedisConf.URI = os.Getenv("REDIS_URI")
 
-	if err = config.basicCheck(); err != nil {
+	if err := config.basicCheck(); err != nil {
 		return nil, err
 	}
 
