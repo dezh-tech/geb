@@ -6,9 +6,9 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/dezh-tech/go-gin-boilerplate/cmd/daemon"
-	"github.com/dezh-tech/go-gin-boilerplate/config"
-	"github.com/dezh-tech/go-gin-boilerplate/pkg/logger"
+	"github.com/dezh-tech/go-echo-boilerplate/cmd/daemon"
+	"github.com/dezh-tech/go-echo-boilerplate/config"
+	"github.com/dezh-tech/go-echo-boilerplate/pkg/logger"
 )
 
 func HandleRun(args []string) {

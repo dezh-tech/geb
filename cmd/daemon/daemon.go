@@ -3,15 +3,15 @@ package daemon
 import (
 	"time"
 
-	"github.com/dezh-tech/go-gin-boilerplate/config"
-	"github.com/dezh-tech/go-gin-boilerplate/delivery/grpc"
-	"github.com/dezh-tech/go-gin-boilerplate/delivery/http"
-	"github.com/dezh-tech/go-gin-boilerplate/infrastructure/database"
-	grpcclient "github.com/dezh-tech/go-gin-boilerplate/infrastructure/grpc_client"
-	"github.com/dezh-tech/go-gin-boilerplate/infrastructure/redis"
-	"github.com/dezh-tech/go-gin-boilerplate/pkg/logger"
-	userrepo "github.com/dezh-tech/go-gin-boilerplate/repository/user"
-	usersrv "github.com/dezh-tech/go-gin-boilerplate/service/user"
+	"github.com/dezh-tech/go-echo-boilerplate/config"
+	"github.com/dezh-tech/go-echo-boilerplate/delivery/grpc"
+	"github.com/dezh-tech/go-echo-boilerplate/delivery/http"
+	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/database"
+	grpcclient "github.com/dezh-tech/go-echo-boilerplate/infrastructure/grpc_client"
+	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/redis"
+	"github.com/dezh-tech/go-echo-boilerplate/pkg/logger"
+	userrepo "github.com/dezh-tech/go-echo-boilerplate/repository/user"
+	usersrv "github.com/dezh-tech/go-echo-boilerplate/service/user"
 )
 
 type Daemon struct {

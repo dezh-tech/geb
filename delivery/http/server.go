@@ -3,8 +3,8 @@ package http
 import (
 	"fmt"
 
-	userh "github.com/dezh-tech/go-gin-boilerplate/delivery/http/user_handler"
-	users "github.com/dezh-tech/go-gin-boilerplate/service/user"
+	userh "github.com/dezh-tech/go-echo-boilerplate/delivery/http/user_handler"
+	users "github.com/dezh-tech/go-echo-boilerplate/service/user"
 	"github.com/labstack/echo/v4"
 )
 

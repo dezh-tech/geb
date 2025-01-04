@@ -3,8 +3,8 @@ package user
 import (
 	"context"
 
-	"github.com/dezh-tech/go-gin-boilerplate/entity"
-	"github.com/dezh-tech/go-gin-boilerplate/infrastructure/database"
+	"github.com/dezh-tech/go-echo-boilerplate/entity"
+	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/database"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

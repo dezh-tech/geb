@@ -1,7 +1,7 @@
 package userhandler
 
 import (
-	"github.com/dezh-tech/go-gin-boilerplate/delivery/http/middleware"
+	"github.com/dezh-tech/go-echo-boilerplate/delivery/http/middleware"
 	"github.com/labstack/echo/v4"
 )
 

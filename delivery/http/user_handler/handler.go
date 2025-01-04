@@ -1,6 +1,6 @@
 package userhandler
 
-import "github.com/dezh-tech/go-gin-boilerplate/service/user"
+import "github.com/dezh-tech/go-echo-boilerplate/service/user"
 
 type Handler struct {
 	userSvc user.Service

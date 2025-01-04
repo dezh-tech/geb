@@ -3,7 +3,7 @@ package userhandler
 import (
 	"net/http"
 
-	"github.com/dezh-tech/go-gin-boilerplate/service/user"
+	"github.com/dezh-tech/go-echo-boilerplate/service/user"
 	"github.com/labstack/echo/v4"
 )
 

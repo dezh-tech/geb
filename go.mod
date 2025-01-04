@@ -1,4 +1,4 @@
-module github.com/dezh-tech/go-gin-boilerplate
+module github.com/dezh-tech/go-echo-boilerplate
 
 go 1.23.3
 

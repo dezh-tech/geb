@@ -3,12 +3,12 @@ package config
 import (
 	"os"
 
-	"github.com/dezh-tech/go-gin-boilerplate/delivery/grpc"
-	"github.com/dezh-tech/go-gin-boilerplate/delivery/http"
-	"github.com/dezh-tech/go-gin-boilerplate/infrastructure/database"
-	grpcclient "github.com/dezh-tech/go-gin-boilerplate/infrastructure/grpc_client"
-	"github.com/dezh-tech/go-gin-boilerplate/infrastructure/redis"
-	"github.com/dezh-tech/go-gin-boilerplate/pkg/logger"
+	"github.com/dezh-tech/go-echo-boilerplate/delivery/grpc"
+	"github.com/dezh-tech/go-echo-boilerplate/delivery/http"
+	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/database"
+	grpcclient "github.com/dezh-tech/go-echo-boilerplate/infrastructure/grpc_client"
+	"github.com/dezh-tech/go-echo-boilerplate/infrastructure/redis"
+	"github.com/dezh-tech/go-echo-boilerplate/pkg/logger"
 	"github.com/joho/godotenv"
 	"gopkg.in/yaml.v3"
 )

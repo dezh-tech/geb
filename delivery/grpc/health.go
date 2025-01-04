@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/dezh-tech/go-gin-boilerplate"
-	pb "github.com/dezh-tech/go-gin-boilerplate/delivery/grpc/gen"
+	"github.com/dezh-tech/go-echo-boilerplate"
+	pb "github.com/dezh-tech/go-echo-boilerplate/delivery/grpc/gen"
 )
 
 type healthServer struct {
